@@ -1,0 +1,27 @@
+<html>
+  <body>
+    <h1>Array and Object Project</h1>
+    <script>
+       var friends = ['Ahmad', 'Owe', 'Lohisree', 'Dami']
+        document.write(friends[0] + "<br>");
+        var fr = friends.join('##');
+        document.write(friends + "<br>Datatype :" + typeof (friends) + "<br><br>");
+
+        document.write(fr + "<br>Datatype :" + typeof (fr) + "<br><br>");
+
+        var y = friends.pop();
+        document.write(friends + "<br>");
+        document.write("<br>Deleted element :" + y + "<br><br>");
+        function f1() {
+            var a;
+            var sum = 0;
+            for (a = 0; a < arguments.length; a += 1) {
+              document.write(arguments[a] + "<br><br>");
+              sum = sum + arguments[a];
+            }
+            document.write(sum + "<br><br>");
+          }
+          f1(5, 9, 1, 2, 8)
+    </script>
+  </body>
+</html>
